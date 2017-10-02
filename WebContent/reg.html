@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>ProInt</title>
+<script type = "text/javascript" src="validation.js"></script>
+<link rel="stylesheet" type="text/css" href="mystyles.css" media="screen" />
+</head>
+<body bgcolor="orange">
+<center><img src = "ProInt Software Logo.png" alt = "ProInt Image" align = "center" height=100 /></center>
+<br><center>
+<form onsubmit="return validate()" action="register" method="post" name='register'>
+
+<h1>Name</h1><input type="text" name="name" autofocus placeholder="Full Name"><br><span id="nameloc"></span><br>
+<h1>Email</h1><input type="email" name="email" placeholder="Email ID"><br><span id="emailloc"></span><br>
+<h1>Password</h1><input type="password" name="pwd" placeholder="D.O.B as pwd(eg:230692)" onkeypress="javascript:return isNumber(event)"><br><span id="passwordloc"></span><br>
+<h1>Confirm Password</h1><input type="password" name="cpwd" placeholder="Must match with Password" onkeypress="javascript:return isNumber(event)" ><br><span id="cpwdloc"></span><br>
+<h1>Mobile No.</h1><input type="text" name="mobile" placeholder="10 digit ph number" onkeypress="javascript:return isNumber(event)"><br><span id="mobileloc"></span><br>
+<h1>Secret Word(Used if you forgot the password.)</h1><input type="password" name="secret" placeholder="Code Word"><br><span id="secretloc"></span><br>
+<h1>Highest Qualification</h1><input type="text" name="qualification" placeholder="BTech/MCA/MTech(With Branch)"><br><span id="qualificationloc"></span><br>
+<h1>Domain</h1><input type="text" name="domain" placeholder="Java/PHP/Android..etc"><br><span id="domainloc"></span><br>
+<h1>Experience</h1><input type="text" name="experience" placeholder="0/1/2/3..etc" onkeypress="javascript:return isNumber(event)"><br><span id="experienceloc"></span><br>
+<input type="submit" value="SIGN ME UP" class="button" style="vertical-align:middle">
+<br><br><br>
+I have an account. Take me back to <a href="login.html">LOG IN</a> page.
+</form>
+</center>
+</body>
+<footer><center><br><b>&copy;RajatGhosh</b></center></footer>
+</html>
